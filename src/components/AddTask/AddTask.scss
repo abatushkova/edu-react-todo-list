@@ -1,0 +1,46 @@
+@use '../../scss/abstracts' as *;
+
+.field {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 40rem;
+  height: 5.2rem;
+  padding: 0 1.6rem;
+  box-sizing: border-box;
+  border-radius: 1.6rem;
+  background-color: $color-surface;
+  color: $white;
+  font: 1.6rem/2.4rem a;
+  font-family: inherit;
+
+  &__input {
+    flex-grow: 1;
+    height: 100%;
+    padding-right: 1.6rem;
+    background-color: rgba(255, 255, 255, 0);
+    color: inherit;
+    font-weight: 500;
+    &::placeholder {
+      color: $white;
+      font-weight: 400;
+      opacity: .5;
+    }
+  }
+
+  &__button {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    background-color: $color-button;
+    font-size: 2.4rem;
+    &:focus,
+    &:hover {
+      box-shadow: 0 0 10px 2px $color-button;
+    }
+    &:active {
+      box-shadow: 0 0 10px 0 $color-button;
+    }
+  }
+}
