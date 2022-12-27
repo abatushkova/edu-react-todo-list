@@ -1,0 +1,19 @@
+@use '../../scss/abstracts' as *;
+
+.task-list {
+  width: 100%;
+  max-width: 60rem;
+  margin-bottom: 5rem;
+
+  &__button {
+    display: block;
+    height: 5.2rem;
+    padding: 0 2.4rem;
+    margin-left: auto;
+    border: 2px solid currentColor;
+    border-radius: 1.6rem;
+    color: $color-button-delete;
+    font: 500 1.6rem/2.4rem a;
+    font-family: inherit;
+  }
+}
