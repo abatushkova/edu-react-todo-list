@@ -1,5 +1,6 @@
 # ToDo List
-Educational project with functionality: add new tasks, edit task, delete, mark as done. 
+Educational project with functionality: add new tasks, edit task, delete, mark as done.  
+[Live Demo](https://abatushkova.github.io/edu-react-todo-list/)
 
 ## Built with
 - Create React App
