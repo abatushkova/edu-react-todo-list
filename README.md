@@ -1,9 +1,11 @@
 # ToDo List
-Educational project with ToDo list.  
+Educational project with functionality: add new tasks, edit task, delete, mark as done. 
 
 ## Built with
 - Create React App
 - TypeScript
+- Sass (.scss)
+- Flexbox layout
 
 ## Installation
 You will need node and npm installed globally on your machine.
