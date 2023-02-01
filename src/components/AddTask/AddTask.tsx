@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { FormEvent, useState } from 'react';
 import { useTasksDispatch } from '../../context/TaskProvider';
 import './AddTask.scss';
 
@@ -8,7 +8,8 @@ export const AddTask = () => {
   const [text, setText] = useState('');
   const dispatch = useTasksDispatch();
 
-  const handleAddClick = () => {
+  const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
     if (!text.length) return;
 
     dispatch({
@@ -22,18 +23,15 @@ export const AddTask = () => {
   }
 
   return (
-    <div className="field">
+    <form className="field" onSubmit={handleSubmit}>
       <input
         type="text"
         value={text}
         onChange={e => setText(e.target.value)}
         className="field__input"
-        placeholder="Add new to-do" />
-      <button
-        type="button"
-        onClick={handleAddClick}
-        className="field__button"
-      >+</button>
-    </div>
+        placeholder="Add new to-do"
+      />
+      <button type="submit" className="field__button">+</button>
+    </form>
   );
 }
