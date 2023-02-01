@@ -75,7 +75,6 @@ export const Task = (props: IPropsModel) => {
       <p className="task__text">{task.text}</p>
       <button
         type="button"
-        disabled={task.done}
         onClick={handleEditClick}
         className="task__button task__button--edit"
       >
@@ -102,7 +101,6 @@ export const Task = (props: IPropsModel) => {
       {taskContent}
       <button
         type="button"
-        disabled={task.done}
         onClick={handleDeleteClick}
         className="task__button task__button--delete"
       >

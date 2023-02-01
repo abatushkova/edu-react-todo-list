@@ -75,7 +75,7 @@ const taskReducer = (tasks: TaskType[], action: TaskActions) => {
 
 const initialTasks: TaskType[] = [];
 
-interface IPropsModel {
+type IPropsModel = {
   children: React.ReactNode;
 }
 
